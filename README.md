@@ -1,6 +1,8 @@
 # BusyTom
  Minimalist Responsive To-Do List in Node.js
 
+![Alt text](https://github.com/TMarski/BusyTom/blob/main/BusyTom_demo.gif?raw=true "BusyTom Demo")
+
 
 Are you tired of tracking your to-do list across two paper notebooks, a Reminders app, and an Evernote document? Do you also believe that there's no need to spend $7.99 per month on a premium productivity app which is bloated with sluggish UI features? Have you also wondered why this problem couldn't just be solved with a self-hosted Javascript app in a Docker container on your home server?
 
