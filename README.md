@@ -10,7 +10,8 @@ I am developing this minimalist web app to include only the features I need, to 
 
 ## Features
 
-  -  A light-weight web app for adding tasks
-  -  Add multiple sub-tasks to a parent task, in order to track progress on multi-step tasks
+  -  A light-weight web app for tracking tasks
+  -  Add multiple sub-tasks to a parent task to track progress on multi-step tasks
   -  A responsive Ajax front-end, allowing you to drag tasks to reorganize your list
+  - Tap or click on task names to edit them
   -  A complete lack of authentication or encryption (in other words, do not use this in production environments or to note sensitive data)
