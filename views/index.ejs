@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BusyTom</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body>
+    <h1></h1>
+    <div class="container">
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter a task">
+        </form>
+
+        <ul id="task-list">
+            <% tasks.forEach((task, index) => { %>
+                <li class="task-container" data-index="<%= index %>" data-task-index="<%= index %>">
+                    <button class="add-subtask">↴</button>
+                    <button class="complete-task">Done</button>
+                    <span class="task-text"><%= task %></span>
+                    <ul class="subtask-list">
+                        <% subtasks[index].forEach((subtask, subtaskIndex) => { %>
+                            <li data-index="<%= index %>-<%= subtaskIndex %>" data-subtask-index="<%= subtaskIndex %>">
+                                <button class="complete-subtask">Done</button>
+                                <span class="subtask-text"><%= subtask %></span>
+                            </li>
+                        <% }) %>
+                    </ul>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222831;
+    color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+#task-input {
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    background-color: #393e46;
+    border: none;
+    color: #eeeeee;
+    margin-right: 1rem;
+}
+
+#task-form button {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    background-color: #00adb5;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+}
+
+button {
+    background-color: #00adb5;
+    border: none;
+    color: #eeeeee;
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #009d9a;
+}
+
+.task-text,
+.subtask-text {
+    font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    #task-input {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #task-input {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #task-input {
+      width: 60%;
+    }
+  }
+  
+  .subtask-text {
+    font-size: 70%;
+}
