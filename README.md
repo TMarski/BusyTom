@@ -8,6 +8,8 @@ Are you tired of tracking your to-do list across two paper notebooks, a Reminder
 
 I am developing this minimalist web app to include only the features I need, to help me keep track of everything I need to do - although you're more than welcome to try it out too. This is primarily a learning-experiece project to familiarize myself both with Node.js and to learn some prompt engineering skills to push ChatGPT through pair-programming a project from start to finish. 
 
+Runs on Port 3000 by default. Future versions will include an option to change this via Docker File.
+
 ## Features
 
   -  A light-weight web app for tracking tasks
